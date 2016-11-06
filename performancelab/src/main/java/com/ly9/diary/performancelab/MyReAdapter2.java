@@ -1,4 +1,4 @@
-package com.ly9.diary.record;
+package com.ly9.diary.performancelab;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -14,13 +14,13 @@ import android.widget.TextView;
  * @copyright HAWK
  */
 
-public class MyReAdapter extends RecyclerView.Adapter<MyReAdapter.MyHolder>{
+public class MyReAdapter2 extends RecyclerView.Adapter<MyReAdapter2.MyHolder>{
     private Context context;
-    public MyReAdapter(Context context){
+    public MyReAdapter2(Context context){
         this.context=context;
     }
     @Override
-    public MyReAdapter.MyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyReAdapter2.MyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v=LayoutInflater.from(context).inflate(R.layout.re_item_1,parent,false);
         MyHolder myHolder = new MyHolder(v);
         return myHolder;
@@ -30,26 +30,26 @@ public class MyReAdapter extends RecyclerView.Adapter<MyReAdapter.MyHolder>{
     public void onBindViewHolder(MyHolder holder, int position) {
         holder.textMid.setText(String.valueOf(fab(position+1)));
     }
-    private static long fab(int n){
-        if(n==1||n==2){
-            return 1;
-        } else{
-            return fab(n-1)+fab(n-2);
-        }
-    }
 //    private static long fab(int n){
-//        long a=1,b=1;
-//        long s=0;
 //        if(n==1||n==2){
 //            return 1;
+//        } else{
+//            return fab(n-1)+fab(n-2);
 //        }
-//        for(int i=2;i<n;i++){
-//            s=a+b;
-//            a=b;
-//            b=s;
-//        }
-//        return s;
 //    }
+    private static long fab(int n){
+        long a=1,b=1;
+        long s=0;
+        if(n==1||n==2){
+            return 1;
+        }
+        for(int i=2;i<n;i++){
+            s=a+b;
+            a=b;
+            b=s;
+        }
+        return s;
+    }
     @Override
     public int getItemCount() {
         return 10000;

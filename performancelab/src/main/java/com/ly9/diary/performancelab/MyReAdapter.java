@@ -1,4 +1,4 @@
-package com.ly9.diary.record;
+package com.ly9.diary.performancelab;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
