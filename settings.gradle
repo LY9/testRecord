@@ -1,1 +1,1 @@
-include ':app', ':performancelab'
+include ':app', ':performancelab', ':record'

@@ -2,6 +2,8 @@
   <library name="runner-0.5">
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support.test/runner/0.5/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/performancelab/build/intermediates/exploded-aar/com.android.support.test/runner/0.5/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/record/build/intermediates/exploded-aar/com.android.support.test/runner/0.5/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support.test/runner/0.5/res" />
@@ -9,6 +11,8 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://D:/sdk/extras/android/m2repository/com/android/support/test/runner/0.5/runner-0.5-sources.jar!/" />
+      <root url="jar://D:/sdk/extras/android/m2repository/com/android/support/test/runner/0.5/runner-0.5-sources.jar!/" />
       <root url="jar://D:/sdk/extras/android/m2repository/com/android/support/test/runner/0.5/runner-0.5-sources.jar!/" />
     </SOURCES>
   </library>

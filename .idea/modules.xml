@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Record2.iml" filepath="$PROJECT_DIR$/Record2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/performancelab/performancelab.iml" filepath="$PROJECT_DIR$/performancelab/performancelab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/record/record.iml" filepath="$PROJECT_DIR$/record/record.iml" />
       <module fileurl="file://$PROJECT_DIR$/testRecord.iml" filepath="$PROJECT_DIR$/testRecord.iml" />
     </modules>
   </component>
