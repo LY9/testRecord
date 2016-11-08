@@ -1,10 +1,8 @@
 package com.example.record;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.FrameLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.RelativeLayout;
-import com.example.record.SplashView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +15,14 @@ public class MainActivity extends AppCompatActivity {
         mRootView=(RelativeLayout)findViewById(R.id.root_view);
         SplashView splashView=new SplashView(this);
         mSplashView=splashView;
-        mSplashView.setOnDismissListener();
+        mSplashView.setOnDismissListener(new SplashView.OnDismissListener() {
+            @Override
+            public void dismiss() {
+//                Drawable drawable= getWindow().getDecorView().getBackground();
+                getWindow().getDecorView().setBackgroundResource(R.color.colorPrimary);
+                mRootView.removeView(mSplashView);
+            }
+        });
         mRootView.addView(mSplashView);
 
     }
