@@ -42,7 +42,6 @@ public class SplashView extends FrameLayout implements SplashHelper.Listener{
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        //// TODO: 2016/11/9 内存泄漏
         SplashHelper.getInstance(getContext()).addListener(this);
 
     }

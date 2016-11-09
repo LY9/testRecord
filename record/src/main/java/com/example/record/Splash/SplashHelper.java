@@ -30,7 +30,7 @@ public class SplashHelper {
     private Drawable mDrawable;
 
     private SplashHelper(Context context){
-        mContext=context;
+        mContext=context.getApplicationContext();
         init();
     }
     private void init(){

@@ -19,7 +19,9 @@ public class MainActivity extends BaseActivity {
         mSplashView.setOnDismissListener(new SplashView.OnDismissListener() {
             @Override
             public void dismiss() {
+                //// TODO: 2016/11/9 怎么判断Drawable对象是否回收 
 //                Drawable drawable= getWindow().getDecorView().getBackground();
+                
                 getWindow().getDecorView().setBackgroundResource(R.color.colorPrimary);
                 mRootView.removeView(mSplashView);
             }
